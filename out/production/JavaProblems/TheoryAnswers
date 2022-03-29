@@ -1,0 +1,40 @@
+Q-1) Which injection is better and why between setter and constructor?
+A-1) Use Setter injection when a number of dependencies are more or you need readability.
+     Use Constructor Injection when Object must be created with all of its dependency.
+     In setter injection strategy, we trust the IoC container that it will first create the bean first
+     but will do the injection right before using the bean using the setter methods. And the injection
+     is done according to your configuration.
+     Constructor injection helps us to identify if our bean is dependent on too many other objects.
+     If our constructor has a large number of arguments this may be a sign that our class has too many
+     responsibilities. We may want to think about refactoring our code to better address proper separation
+     of concerns.
+
+Q-2) What are the bean scopes in spring and define each?
+A-2) Singleton Scope
+     When we define a bean with the singleton scope, the container creates a single instance of that bean;
+     all requests for that bean name will return the same object, which is cached. Any modifications to
+     the object will be reflected in all references to the bean. This scope is the default value if no
+     other scope is specified.
+
+     Prototype Scope
+     A bean with the prototype scope will return a different instance every time it is requested from
+     the container.
+
+     Web Aware Scopes
+     There are four additional scopes that are only available in a web-aware application context.
+     We use these less often in practice.
+     i)Request Scope
+     The request scope creates a bean instance for a single HTTP request. while the
+
+     ii)Session Scope
+     The session scope creates a bean instance for an HTTP Session.
+
+     iii)Application Scope
+     The application scope creates the bean instance for the lifecycle of a ServletContext.
+
+     iv)Web Socket Scope
+     The web socket scope creates it for a particular WebSocket session.
+
+
+
+
