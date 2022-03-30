@@ -1,9 +1,11 @@
 Q-1) Which injection is better and why between setter and constructor?
 A-1) Use Setter injection when a number of dependencies are more or you need readability.
      Use Constructor Injection when Object must be created with all of its dependency.
+
      In setter injection strategy, we trust the IoC container that it will first create the bean first
      but will do the injection right before using the bean using the setter methods. And the injection
      is done according to your configuration.
+
      Constructor injection helps us to identify if our bean is dependent on too many other objects.
      If our constructor has a large number of arguments this may be a sign that our class has too many
      responsibilities. We may want to think about refactoring our code to better address proper separation
