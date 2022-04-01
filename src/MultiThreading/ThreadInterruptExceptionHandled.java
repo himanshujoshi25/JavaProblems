@@ -1,5 +1,4 @@
 package MultiThreading;
-
 public class ThreadInterruptExceptionHandled extends Thread{
 
     public void run(){

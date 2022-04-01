@@ -1,5 +1,4 @@
 package MultiThreading;
-
 public class ThreadIsInterruptedExample extends Thread {
 
     public void run() {
@@ -19,7 +18,7 @@ public class ThreadIsInterruptedExample extends Thread {
         System.out.println("Is thread interrupted? : "+t2.isInterrupted());
         // interrupt thread t1
         t1.interrupt();
-        System.out.println("Is thread interrupted? : " +t1.isInterrupted());
+        System.out.println("Is thread interrupted? : "+t1.isInterrupted());
         System.out.println("Is thread interrupted? : "+t2.isInterrupted());
     }
 }
