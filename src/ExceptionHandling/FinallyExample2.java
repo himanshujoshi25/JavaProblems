@@ -1,5 +1,4 @@
 package ExceptionHandling;
-
 public class FinallyExample2 {
 
     public static void main(String[] args)
